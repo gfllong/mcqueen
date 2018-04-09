@@ -93,4 +93,8 @@ public interface RoleAuthMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(RoleAuth record);
+
+    void roleConfigAuth(@Param("roleAuths") List<RoleAuth> roleAuths);
+
+    void delAllAuthByRoleID(@Param("roleID") Integer roleID);
 }

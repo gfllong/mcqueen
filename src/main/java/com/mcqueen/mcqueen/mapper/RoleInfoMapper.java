@@ -1,8 +1,11 @@
 package com.mcqueen.mcqueen.mapper;
 
+import com.github.pagehelper.Page;
 import com.mcqueen.mcqueen.model.RoleInfo;
 import com.mcqueen.mcqueen.model.RoleInfoExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface RoleInfoMapper {
@@ -93,4 +96,8 @@ public interface RoleInfoMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(RoleInfo record);
+
+    Page<RoleInfo> findValidRoles();
+
+    List<RoleInfo> findByUserID(@Param("userID") Integer userID);
 }

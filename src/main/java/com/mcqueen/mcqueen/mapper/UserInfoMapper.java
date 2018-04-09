@@ -1,5 +1,6 @@
 package com.mcqueen.mcqueen.mapper;
 
+import com.github.pagehelper.Page;
 import com.mcqueen.mcqueen.model.UserInfo;
 import com.mcqueen.mcqueen.model.UserInfoExample;
 import java.util.List;
@@ -93,4 +94,6 @@ public interface UserInfoMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(UserInfo record);
+
+    Page<UserInfo> findUsers();
 }

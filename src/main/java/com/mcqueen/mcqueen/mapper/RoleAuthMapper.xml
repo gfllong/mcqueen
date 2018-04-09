@@ -285,4 +285,22 @@
       IsDelete = #{isDelete,jdbcType=BIT}
     where ID = #{ID,jdbcType=INTEGER}
   </update>
+
+  <insert id="roleConfigAuth">
+    INSERT INTO M_Role_Auth
+    (RoleID, AuthID,
+    CreateTime, LastModifyTime, IsDelete
+    )
+    values
+    <foreach collection ="roleAuths" item="roleAuth" separator =",">
+      (#{roleAuth.roleID,jdbcType=INTEGER}, #{roleAuth.authID,jdbcType=INTEGER},
+      #{roleAuth.createTime,jdbcType=TIMESTAMP}, #{roleAuth.lastModifyTime,jdbcType=TIMESTAMP}, #{roleAuth.isDelete,jdbcType=BIT}
+      )
+    </foreach >
+
+  </insert>
+
+  <update id="delAllAuthByRoleID">
+    update M_Role_Auth set IsDelete = 1 where RoleID = #{roleID};
+  </update>
 </mapper>

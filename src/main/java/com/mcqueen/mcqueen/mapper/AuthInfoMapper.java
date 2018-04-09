@@ -1,8 +1,11 @@
 package com.mcqueen.mcqueen.mapper;
 
+import com.github.pagehelper.Page;
 import com.mcqueen.mcqueen.model.AuthInfo;
 import com.mcqueen.mcqueen.model.AuthInfoExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface AuthInfoMapper {
@@ -93,4 +96,8 @@ public interface AuthInfoMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(AuthInfo record);
+
+    Page<AuthInfo> findValidAuth();
+
+    List<AuthInfo> findByUserID(@Param("userID") Integer userID);
 }

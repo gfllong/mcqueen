@@ -645,6 +645,66 @@ public class UserInfoExample {
             return (Criteria) this;
         }
 
+        public Criteria andIsEnableIsNull() {
+            addCriterion("IsEnable is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEnableIsNotNull() {
+            addCriterion("IsEnable is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEnableEqualTo(Boolean value) {
+            addCriterion("IsEnable =", value, "isEnable");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEnableNotEqualTo(Boolean value) {
+            addCriterion("IsEnable <>", value, "isEnable");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEnableGreaterThan(Boolean value) {
+            addCriterion("IsEnable >", value, "isEnable");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEnableGreaterThanOrEqualTo(Boolean value) {
+            addCriterion("IsEnable >=", value, "isEnable");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEnableLessThan(Boolean value) {
+            addCriterion("IsEnable <", value, "isEnable");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEnableLessThanOrEqualTo(Boolean value) {
+            addCriterion("IsEnable <=", value, "isEnable");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEnableIn(List<Boolean> values) {
+            addCriterion("IsEnable in", values, "isEnable");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEnableNotIn(List<Boolean> values) {
+            addCriterion("IsEnable not in", values, "isEnable");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEnableBetween(Boolean value1, Boolean value2) {
+            addCriterion("IsEnable between", value1, value2, "isEnable");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEnableNotBetween(Boolean value1, Boolean value2) {
+            addCriterion("IsEnable not between", value1, value2, "isEnable");
+            return (Criteria) this;
+        }
+
         public Criteria andMobileLikeInsensitive(String value) {
             addCriterion("upper(Mobile) like", value.toUpperCase(), "mobile");
             return (Criteria) this;

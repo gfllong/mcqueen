@@ -27,54 +27,24 @@
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 
-		<table tableName="M_Auth_Info" domainObjectName="AuthInfo" delimitIdentifiers="true">
-			<property name="useActualColumnNames" value="true"/>
-			<!--<generatedKey column="FID" sqlStatement="SELECT @@IDENTITY" identity="true" />-->
-			<!--<columnRenamingRule searchString="^F" replaceString=""/>-->
-			<!--<columnOverride column="FFirstAmount" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FMonthReAmount" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FCarPrice" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FUseMoneyOfMoney" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-		</table>
+		<!--<table tableName="M_Auth_Info" domainObjectName="AuthInfo" delimitIdentifiers="true">-->
+			<!--<property name="useActualColumnNames" value="true"/>-->
+		<!--</table>-->
 
-		<table tableName="M_Role_Auth" domainObjectName="RoleAuth" delimitIdentifiers="true">
-			<property name="useActualColumnNames" value="true"/>
-			<!--<generatedKey column="FID" sqlStatement="SELECT @@IDENTITY" identity="true" />-->
-			<!--<columnRenamingRule searchString="^F" replaceString=""/>-->
-			<!--<columnOverride column="FFirstAmount" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FMonthReAmount" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FCarPrice" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FUseMoneyOfMoney" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-		</table>
+		<!--<table tableName="M_Role_Auth" domainObjectName="RoleAuth" delimitIdentifiers="true">-->
+			<!--<property name="useActualColumnNames" value="true"/>-->
+		<!--</table>-->
 
-		<table tableName="M_Role_Info" domainObjectName="RoleInfo" delimitIdentifiers="true">
-			<property name="useActualColumnNames" value="true"/>
-			<!--<generatedKey column="FID" sqlStatement="SELECT @@IDENTITY" identity="true" />-->
-			<!--<columnRenamingRule searchString="^F" replaceString=""/>-->
-			<!--<columnOverride column="FFirstAmount" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FMonthReAmount" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FCarPrice" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FUseMoneyOfMoney" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-		</table>
+		<!--<table tableName="M_Role_Info" domainObjectName="RoleInfo" delimitIdentifiers="true">-->
+			<!--<property name="useActualColumnNames" value="true"/>-->
+		<!--</table>-->
 
 		<table tableName="M_User_Info" domainObjectName="UserInfo" delimitIdentifiers="true">
 			<property name="useActualColumnNames" value="true"/>
-			<!--<generatedKey column="FID" sqlStatement="SELECT @@IDENTITY" identity="true" />-->
-			<!--<columnRenamingRule searchString="^F" replaceString=""/>-->
-			<!--<columnOverride column="FFirstAmount" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FMonthReAmount" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FCarPrice" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FUseMoneyOfMoney" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
 		</table>
 
-		<table tableName="M_User_Role" domainObjectName="UserRole" delimitIdentifiers="true">
-			<property name="useActualColumnNames" value="true"/>
-			<!--<generatedKey column="FID" sqlStatement="SELECT @@IDENTITY" identity="true" />-->
-			<!--<columnRenamingRule searchString="^F" replaceString=""/>-->
-			<!--<columnOverride column="FFirstAmount" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FMonthReAmount" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FCarPrice" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-			<!--<columnOverride column="FUseMoneyOfMoney" javaType="java.lang.Double" jdbcType="DECIMAL"/>-->
-		</table>
+		<!--<table tableName="M_User_Role" domainObjectName="UserRole" delimitIdentifiers="true">-->
+			<!--<property name="useActualColumnNames" value="true"/>-->
+		<!--</table>-->
 	</context>
 </generatorConfiguration>

@@ -93,4 +93,8 @@ public interface UserRoleMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(UserRole record);
+
+    void    configUserRole(@Param("userRoles") List<UserRole> userRoles);
+
+    void delAllRoleByUserID(@Param("userID") Integer userID);
 }

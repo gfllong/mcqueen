@@ -1,6 +1,7 @@
 package com.mcqueen.mcqueen.base;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.mcqueen.mcqueen.base.page.PageInfo;
 import io.swagger.annotations.ApiModelProperty;
 
 import java.io.Serializable;
@@ -28,6 +29,10 @@ public class XaResult<T> implements Serializable {
 
     @ApiModelProperty("附加信息")
     private Map<String, Object> map = new HashMap();
+
+    @ApiModelProperty("分页信息")
+    private PageInfo page;
+
 
     public XaResult() {
         super();
@@ -59,6 +64,18 @@ public class XaResult<T> implements Serializable {
         this.map = new HashMap();
     }
 
+    public static <K> XaResult<List<K>> success(PageInfo page) {
+        XaResult xaResult = new XaResult();
+        xaResult.setSuccess(page.getList());
+        xaResult.setPage(page);
+        return xaResult;
+    }
+    public static <K> XaResult<List<K>> success(PageInfo page, List<K> contents) {
+        XaResult xaResult = new XaResult();
+        xaResult.setSuccess(contents);
+        xaResult.setPage(page);
+        return xaResult;
+    }
 
     public static <R> XaResult<R> error(String message) {
         XaResult xaResult = new XaResult();
@@ -110,5 +127,14 @@ public class XaResult<T> implements Serializable {
 
     public void setMap(Map<String, Object> map) {
         this.map = map;
+    }
+
+    public PageInfo getPage() {
+        return page;
+    }
+
+    public void setPage(PageInfo page) {
+        page.setList(null);
+        this.page = page;
     }
 }
